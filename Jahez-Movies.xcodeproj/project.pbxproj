@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AA1AC122F8C85CB00DC8203 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA1AC112F8C85CB00DC8203 /* Networking */; };
 		7AA1AC1F2F8E785700DC8203 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA1AC1E2F8E785700DC8203 /* Kingfisher */; };
+		7AA1AC242F8EB82600DC8203 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA1AC232F8EB82600DC8203 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +35,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7AA1AC0F2F8C855B00DC8203 /* Exceptions for "Packages" folder in "Jahez-Movies" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Networking,
-			);
-			target = 7AA1ABDD2F8C800A00DC8203 /* Jahez-Movies */;
-		};
 		7AA1AC212F8E788D00DC8203 /* Exceptions for "Jahez-Movies" folder in "Jahez-Movies" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -72,9 +65,6 @@
 		};
 		7AA1AC0D2F8C84CD00DC8203 /* Packages */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7AA1AC0F2F8C855B00DC8203 /* Exceptions for "Packages" folder in "Jahez-Movies" target */,
-			);
 			path = Packages;
 			sourceTree = "<group>";
 		};
@@ -85,8 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA1AC242F8EB82600DC8203 /* Networking in Frameworks */,
 				7AA1AC1F2F8E785700DC8203 /* Kingfisher in Frameworks */,
-				7AA1AC122F8C85CB00DC8203 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,8 +147,8 @@
 			);
 			name = "Jahez-Movies";
 			packageProductDependencies = (
-				7AA1AC112F8C85CB00DC8203 /* Networking */,
 				7AA1AC1E2F8E785700DC8203 /* Kingfisher */,
+				7AA1AC232F8EB82600DC8203 /* Networking */,
 			);
 			productName = "Jahez-Movies";
 			productReference = 7AA1ABDE2F8C800A00DC8203 /* Jahez-Movies.app */;
@@ -244,6 +234,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				7AA1AC132F8C86CB00DC8203 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7AA1AC222F8EB82600DC8203 /* XCLocalSwiftPackageReference "../../Packages/Networking" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7AA1ABDF2F8C800A00DC8203 /* Products */;
@@ -657,6 +648,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		7AA1AC222F8EB82600DC8203 /* XCLocalSwiftPackageReference "../../Packages/Networking" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Packages/Networking;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		7AA1AC132F8C86CB00DC8203 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -669,14 +667,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7AA1AC112F8C85CB00DC8203 /* Networking */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Networking;
-		};
 		7AA1AC1E2F8E785700DC8203 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7AA1AC132F8C86CB00DC8203 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		7AA1AC232F8EB82600DC8203 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
