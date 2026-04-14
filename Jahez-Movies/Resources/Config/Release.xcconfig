@@ -1,0 +1,10 @@
+//
+//  Release.xcconfig
+//  Jahez-Movies
+//
+//  Created by MhMuD SalAh on 14/04/2026.
+//
+
+
+base_url = https:/$()/api.themoviedb.org/3/
+api_key = bc55d3258448176af1b20afb13344795
