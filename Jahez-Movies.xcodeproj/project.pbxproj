@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7AA1AC1F2F8E785700DC8203 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA1AC1E2F8E785700DC8203 /* Kingfisher */; };
-		7AA1AC242F8EB82600DC8203 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA1AC232F8EB82600DC8203 /* Networking */; };
+		7AA1AC272F8FDF9C00DC8203 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA1AC262F8FDF9C00DC8203 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,11 +63,6 @@
 			path = "Jahez-MoviesUITests";
 			sourceTree = "<group>";
 		};
-		7AA1AC0D2F8C84CD00DC8203 /* Packages */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Packages;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AA1AC242F8EB82600DC8203 /* Networking in Frameworks */,
+				7AA1AC272F8FDF9C00DC8203 /* Networking in Frameworks */,
 				7AA1AC1F2F8E785700DC8203 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +95,6 @@
 		7AA1ABD52F8C800A00DC8203 = {
 			isa = PBXGroup;
 			children = (
-				7AA1AC0D2F8C84CD00DC8203 /* Packages */,
 				7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */,
 				7AA1ABF32F8C800C00DC8203 /* Jahez-MoviesTests */,
 				7AA1ABFD2F8C800C00DC8203 /* Jahez-MoviesUITests */,
@@ -143,12 +137,11 @@
 			);
 			fileSystemSynchronizedGroups = (
 				7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */,
-				7AA1AC0D2F8C84CD00DC8203 /* Packages */,
 			);
 			name = "Jahez-Movies";
 			packageProductDependencies = (
 				7AA1AC1E2F8E785700DC8203 /* Kingfisher */,
-				7AA1AC232F8EB82600DC8203 /* Networking */,
+				7AA1AC262F8FDF9C00DC8203 /* Networking */,
 			);
 			productName = "Jahez-Movies";
 			productReference = 7AA1ABDE2F8C800A00DC8203 /* Jahez-Movies.app */;
@@ -234,7 +227,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				7AA1AC132F8C86CB00DC8203 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				7AA1AC222F8EB82600DC8203 /* XCLocalSwiftPackageReference "../../Packages/Networking" */,
+				7AA1AC252F8FDF9C00DC8203 /* XCRemoteSwiftPackageReference "Networking" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7AA1ABDF2F8C800A00DC8203 /* Products */;
@@ -648,17 +641,18 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		7AA1AC222F8EB82600DC8203 /* XCLocalSwiftPackageReference "../../Packages/Networking" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../Packages/Networking;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		7AA1AC132F8C86CB00DC8203 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7AA1AC252F8FDF9C00DC8203 /* XCRemoteSwiftPackageReference "Networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MhMudSalAh/Networking";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -672,8 +666,9 @@
 			package = 7AA1AC132F8C86CB00DC8203 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		7AA1AC232F8EB82600DC8203 /* Networking */ = {
+		7AA1AC262F8FDF9C00DC8203 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 7AA1AC252F8FDF9C00DC8203 /* XCRemoteSwiftPackageReference "Networking" */;
 			productName = Networking;
 		};
 /* End XCSwiftPackageProductDependency section */

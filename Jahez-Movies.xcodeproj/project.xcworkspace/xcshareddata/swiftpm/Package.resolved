@@ -1,5 +1,5 @@
 {
-  "originHash" : "f42daccc96946009409bf463f8283096fd0ac85a2af1d0e89553d989b8c1079a",
+  "originHash" : "a263390e1a68eb18c3aee04b970a4fd63300ff6d638a239a4a06677443c8e985",
   "pins" : [
     {
       "identity" : "kingfisher",
@@ -8,6 +8,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "19563cf921c7b389bec0b18e47e77328d4dd99ab"
+      }
+    },
+    {
+      "identity" : "networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MhMudSalAh/Networking",
+      "state" : {
+        "branch" : "master",
+        "revision" : "724cbb3773ef8931d7705818684b0ff68a30ba1b"
       }
     }
   ],
