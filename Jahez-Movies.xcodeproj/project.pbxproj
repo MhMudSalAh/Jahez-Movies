@@ -98,7 +98,6 @@
 				7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */,
 				7AA1ABF32F8C800C00DC8203 /* Jahez-MoviesTests */,
 				7AA1ABFD2F8C800C00DC8203 /* Jahez-MoviesUITests */,
-				7AA1AC102F8C85CB00DC8203 /* Frameworks */,
 				7AA1ABDF2F8C800A00DC8203 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,13 +110,6 @@
 				7AA1ABFA2F8C800C00DC8203 /* Jahez-MoviesUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		7AA1AC102F8C85CB00DC8203 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
