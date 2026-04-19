@@ -11,6 +11,7 @@ struct MovieDetailsService: ServiceProtocol {
     var path: String
     var method: HTTPMethod { .GET }
     var parameters: Parameters?
+    var urlCachePolicy: Bool { true }
     
     init(movieId: Int) {
         self.path = EndPointEnum.movieDetails + "/\(movieId)"
