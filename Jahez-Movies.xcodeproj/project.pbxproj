@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7AA1AC1F2F8E785700DC8203 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA1AC1E2F8E785700DC8203 /* Kingfisher */; };
+		7AA1AC272F8FDF9C00DC8203 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA1AC262F8FDF9C00DC8203 /* Networking */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7AA1ABF12F8C800C00DC8203 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +34,22 @@
 		7AA1ABFA2F8C800C00DC8203 /* Jahez-MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jahez-MoviesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7AA1AC212F8E788D00DC8203 /* Exceptions for "Jahez-Movies" folder in "Jahez-Movies" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = 7AA1ABDD2F8C800A00DC8203 /* Jahez-Movies */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7AA1AC212F8E788D00DC8203 /* Exceptions for "Jahez-Movies" folder in "Jahez-Movies" target */,
+			);
 			path = "Jahez-Movies";
 			sourceTree = "<group>";
 		};
@@ -52,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA1AC272F8FDF9C00DC8203 /* Networking in Frameworks */,
+				7AA1AC1F2F8E785700DC8203 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +132,8 @@
 			);
 			name = "Jahez-Movies";
 			packageProductDependencies = (
+				7AA1AC1E2F8E785700DC8203 /* Kingfisher */,
+				7AA1AC262F8FDF9C00DC8203 /* Networking */,
 			);
 			productName = "Jahez-Movies";
 			productReference = 7AA1ABDE2F8C800A00DC8203 /* Jahez-Movies.app */;
@@ -195,6 +217,10 @@
 			);
 			mainGroup = 7AA1ABD52F8C800A00DC8203;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7AA1AC132F8C86CB00DC8203 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7AA1AC252F8FDF9C00DC8203 /* XCRemoteSwiftPackageReference "Networking" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7AA1ABDF2F8C800A00DC8203 /* Products */;
 			projectDirPath = "";
@@ -271,6 +297,8 @@
 /* Begin XCBuildConfiguration section */
 		7AA1AC022F8C800C00DC8203 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */;
+			baseConfigurationReferenceRelativePath = Resources/Config/Debug.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -335,6 +363,8 @@
 		};
 		7AA1AC032F8C800C00DC8203 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */;
+			baseConfigurationReferenceRelativePath = Resources/Config/Release.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -392,6 +422,8 @@
 		};
 		7AA1AC052F8C800C00DC8203 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */;
+			baseConfigurationReferenceRelativePath = Resources/Config/Debug.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -400,30 +432,39 @@
 				DEVELOPMENT_TEAM = 4DKEX8NYQS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jahez-Movies/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mhmud.Jahez-Movies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7AA1AC062F8C800C00DC8203 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */;
+			baseConfigurationReferenceRelativePath = Resources/Config/Release.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -432,30 +473,39 @@
 				DEVELOPMENT_TEAM = 4DKEX8NYQS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jahez-Movies/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mhmud.Jahez-Movies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		7AA1AC082F8C800C00DC8203 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */;
+			baseConfigurationReferenceRelativePath = Resources/Config/Debug.xcconfig;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +528,8 @@
 		};
 		7AA1AC092F8C800C00DC8203 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */;
+			baseConfigurationReferenceRelativePath = Resources/Config/Release.xcconfig;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +552,8 @@
 		};
 		7AA1AC0B2F8C800C00DC8203 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */;
+			baseConfigurationReferenceRelativePath = Resources/Config/Debug.xcconfig;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -520,6 +574,8 @@
 		};
 		7AA1AC0C2F8C800C00DC8203 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 7AA1ABE02F8C800A00DC8203 /* Jahez-Movies */;
+			baseConfigurationReferenceRelativePath = Resources/Config/Release.xcconfig;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -578,6 +634,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7AA1AC132F8C86CB00DC8203 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7AA1AC252F8FDF9C00DC8203 /* XCRemoteSwiftPackageReference "Networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MhMudSalAh/Networking";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7AA1AC1E2F8E785700DC8203 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AA1AC132F8C86CB00DC8203 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		7AA1AC262F8FDF9C00DC8203 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AA1AC252F8FDF9C00DC8203 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7AA1ABD62F8C800A00DC8203 /* Project object */;
 }

@@ -1,0 +1,24 @@
+{
+  "originHash" : "a263390e1a68eb18c3aee04b970a4fd63300ff6d638a239a4a06677443c8e985",
+  "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "19563cf921c7b389bec0b18e47e77328d4dd99ab"
+      }
+    },
+    {
+      "identity" : "networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MhMudSalAh/Networking",
+      "state" : {
+        "branch" : "master",
+        "revision" : "cfcb456ff56881fcd18dbf6fdc2994bc49d0eae8"
+      }
+    }
+  ],
+  "version" : 3
+}
