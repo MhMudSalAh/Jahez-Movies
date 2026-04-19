@@ -19,8 +19,7 @@ struct RootRouter {
             container.makeSplashView()
 
         case .movies:
-            // TODO: - 
-            EmptyView()
+            container.makeMoviesView()
         }
     }
 }

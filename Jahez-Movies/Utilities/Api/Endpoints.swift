@@ -7,7 +7,8 @@
 
 import Foundation
 
-enum EndpointsEnum {
+enum EndPointEnum {
+    static let image = "https://image.tmdb.org/t/p/w500"
     static let categories = "genre/movie/list"
     static let movies = "discover/movie"
     static let movieDetails = "movie"

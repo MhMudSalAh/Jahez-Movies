@@ -70,4 +70,6 @@ public enum Sizes {
     public static let px100: Double = 100.0
     /// 120.0
     public static let px120: Double = 120.0
+    /// 220.0
+    public static let px220: Double = 220.0
 }

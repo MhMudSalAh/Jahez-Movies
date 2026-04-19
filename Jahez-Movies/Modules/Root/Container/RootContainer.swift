@@ -20,4 +20,8 @@ final class RootContainer {
     func makeSplashView() -> some View {
         SplashFactory.makeView(router: router)
     }
+    
+    func makeMoviesView() -> some View {
+        MoviesFactory.makeView(isPreview: false, router: router)
+    }
 }

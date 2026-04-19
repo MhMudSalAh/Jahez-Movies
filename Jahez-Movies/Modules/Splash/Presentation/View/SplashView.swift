@@ -30,7 +30,6 @@ struct SplashView: View {
                 viewModel.didFinishSplash()
                 
             }
-            .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color(uiColor: .primary))
         }
