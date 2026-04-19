@@ -40,7 +40,7 @@ final class MovieDetailsDataSource {
                 )
             ],
             status: "Released",
-            runTime: 98,
+            runTime: 98
         )
     }
     
