@@ -31,7 +31,7 @@ struct MovieView: View {
                         textWeight: .bold
                     )
                     Caption(
-                        text: viewModel.movie.date,
+                        text: viewModel.movie.date.year,
                         textWeight: .semibold
                     )
                 }

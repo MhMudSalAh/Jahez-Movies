@@ -14,9 +14,10 @@ final class MoviesDataSource {
             MovieModel(
                 id: 1226863,
                 title: "The Super Mario Galaxy Movie",
+                overView: "When his new album fails to sell records, pop/rap superstar Conner4real goes into a major tailspin and watches his celebrity high life begin to collapse.",
                 image:  "/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
-                adult: false,
                 cover: "/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+                adult: false,
                 categories: nil,
                 categoriesIDs: [
                     10751,
@@ -25,20 +26,34 @@ final class MoviesDataSource {
                     28,
                     16
                 ],
-                date: "2015-04-23"
+                date: "2015-04-23",
+                homepage: nil,
+                budget: nil,
+                revenue: nil,
+                languages: nil,
+                status: nil,
+                runTime: nil
             ),
+            
             MovieModel(
                 id: 1523145,
                 title: "Your Heart Will Be Broken",
+                overView: "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr.",
                 image:  "/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
-                adult: false,
                 cover: "/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
+                adult: false,
                 categories: nil,
                 categoriesIDs: [
                     10749,
                     12
                 ],
-                date: "2019-08-07"
+                date: "2019-08-07",
+                homepage: nil,
+                budget: nil,
+                revenue: nil,
+                languages: nil,
+                status: nil,
+                runTime: nil
             )
         ]
     }

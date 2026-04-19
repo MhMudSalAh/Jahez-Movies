@@ -64,12 +64,18 @@ public enum Sizes {
     public static let px70: Double = 70.0
     /// 80.0
     public static let px80: Double = 80.0
+    /// 90.0
+    public static let px90: Double = 90.0
     /// 96.0
     public static let px96: Double = 96.0
     /// 100.0
     public static let px100: Double = 100.0
     /// 120.0
     public static let px120: Double = 120.0
+    /// 150.0
+    public static let px150: Double = 150.0
     /// 220.0
     public static let px220: Double = 220.0
+    /// 300.0
+    public static let px300: Double = 300.0
 }

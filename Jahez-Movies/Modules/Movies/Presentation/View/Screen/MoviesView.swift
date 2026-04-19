@@ -27,8 +27,8 @@ struct MoviesView: View {
                         moviesView
                     }
                 }
-                .padding(.horizontal, 16)
-                .padding(.top, 8)
+                .padding(.horizontal, Sizes.px16)
+                .padding(.top, Sizes.px8)
             }
             .background(Color.appPrimary.ignoresSafeArea())
             .navigationTitle("Watch New Movies")

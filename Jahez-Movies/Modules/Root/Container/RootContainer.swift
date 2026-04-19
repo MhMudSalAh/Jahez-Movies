@@ -24,4 +24,8 @@ final class RootContainer {
     func makeMoviesView() -> some View {
         MoviesFactory.makeView(isPreview: false, router: router)
     }
+    
+    func makeMoviesView(movie: MovieModel) -> some View {
+        MovieDetailsFactory.makeView(isPreview: false, router: router, movie: movie)
+    }
 }

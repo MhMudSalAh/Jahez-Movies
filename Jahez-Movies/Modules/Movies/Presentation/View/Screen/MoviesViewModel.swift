@@ -99,6 +99,6 @@ final class MoviesViewModel: ObservableObject {
     }
     
     func didSelectMovie(_ movie: MovieModel) {
-        // TODO: -
+        router.presentSheet(.movie(movie))
     }
 }

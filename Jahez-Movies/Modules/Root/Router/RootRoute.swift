@@ -10,6 +10,7 @@ import Foundation
 enum RootRoute: Hashable, Identifiable {
     case splash
     case movies
+    case movie(_ movie: MovieModel)
     
     var id: String { String(describing: self) }
 }
