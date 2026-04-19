@@ -12,10 +12,27 @@ import CoreData
 struct Jahez_MoviesApp: App {
     let persistenceController = PersistenceController.shared
 
+    @StateObject private var coordinator = Coordinator(
+        middleware: [
+            // TODO: - Add AnalyticsMiddleware
+        ]
+    )
+    
+    private var container: RootContainer {
+        RootContainer(router: coordinator)
+    }
+
+    private var router: RootRouter {
+        RootRouter(container: container)
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            RootFactory.makeView(
+                coordinator: coordinator,
+                router: router
+            )
         }
     }
+
 }
