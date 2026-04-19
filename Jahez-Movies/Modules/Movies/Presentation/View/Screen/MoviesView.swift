@@ -19,26 +19,18 @@ struct MoviesView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: Sizes.px16) {
-
                     categoriesView
-
-                    LazyVGrid(
-                        columns: [
-                            GridItem(.flexible(), spacing: Sizes.px12),
-                            GridItem(.flexible(), spacing: Sizes.px12)
-                        ],
-                        spacing: 12
-                    ) {
-                        ForEach(viewModel.filteredMovies) { movie in
-                            movieView(for: movie)
-                        }
+                    
+                    if viewModel.isNoData {
+                        emptyView
+                    } else {
+                        moviesView
                     }
-                    .frame(maxWidth: .infinity)
                 }
                 .padding(.horizontal, 16)
                 .padding(.top, 8)
             }
-            .background(Color.primary.ignoresSafeArea())
+            .background(Color.appPrimary.ignoresSafeArea())
             .navigationTitle("Watch New Movies")
             .navigationBarTitleDisplayMode(.large)
             .searchable(
@@ -63,6 +55,21 @@ struct MoviesView: View {
         )
     }
     
+    private var moviesView: some View {
+        LazyVGrid(
+            columns: [
+                GridItem(.flexible(), spacing: Sizes.px12),
+                GridItem(.flexible(), spacing: Sizes.px12)
+            ],
+            spacing: 12
+        ) {
+            ForEach(viewModel.filteredMovies) { movie in
+                movieView(for: movie)
+            }
+        }
+        .frame(maxWidth: .infinity)
+    }
+    
     private func movieView(for movie: MovieModel) -> some View {
         MovieView(viewModel: MovieViewModel(movie))
             .frame(height: Sizes.px220)
@@ -76,13 +83,11 @@ struct MoviesView: View {
     }
     
     private var emptyView: some View {
-        VStack {
-            Spacer()
-            Text("No Movies Found !!")
-                .foregroundColor(.white)
-                .font(.headline)
-            Spacer()
-        }
+        Text("Oops No Movies Found !!")
+            .foregroundColor(.white)
+            .font(.headline)
+            .multilineTextAlignment(.center)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
     }
 }
 

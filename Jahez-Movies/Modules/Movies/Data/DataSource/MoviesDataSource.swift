@@ -22,7 +22,7 @@ final class MoviesDataSource {
                     10751,
                     35,
                     12,
-                    14,
+                    28,
                     16
                 ],
                 date: "2015-04-23"
@@ -36,7 +36,7 @@ final class MoviesDataSource {
                 categories: nil,
                 categoriesIDs: [
                     10749,
-                    18
+                    12
                 ],
                 date: "2019-08-07"
             )

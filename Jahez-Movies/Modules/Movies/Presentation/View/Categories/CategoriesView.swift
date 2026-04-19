@@ -20,14 +20,14 @@ struct CategoriesView: View {
                         action: { viewModel.action(category.id) }
                     ) {
                         Text(category.name)
-                            .foregroundColor(isSelected ? Color.primary : .white)
+                            .foregroundColor(isSelected ? Color.appPrimary : .white)
                             .padding(.horizontal, Sizes.px16)
                             .padding(.vertical, Sizes.px4)
-                            .background(isSelected ? Color.secondary : .clear)
+                            .background(isSelected ? Color.appSecondary : .clear)
                             .cornerRadius(Sizes.px100)
                             .overlay(
                                 RoundedRectangle(cornerRadius: Sizes.px100)
-                                    .stroke(Color.secondary, lineWidth: 1)
+                                    .stroke(Color.appSecondary, lineWidth: 1)
                             )
                     }
                 }

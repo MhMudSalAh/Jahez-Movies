@@ -34,7 +34,7 @@ struct Jahez_MoviesApp: App {
             .foregroundColor: UIColor.yellow
         ]
         appearance.titleTextAttributes = [
-            .foregroundColor: UIColor.secondary
+            .foregroundColor: UIColor.uiSecondary
         ]
         
         UINavigationBar.appearance().standardAppearance = appearance

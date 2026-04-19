@@ -31,7 +31,7 @@ struct SplashView: View {
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(uiColor: .primary))
+            .background(Color.appPrimary)
         }
     }
 }

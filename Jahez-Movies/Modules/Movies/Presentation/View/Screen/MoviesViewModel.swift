@@ -15,9 +15,9 @@ final class MoviesViewModel: ObservableObject {
     private let useCase: MoviesUseCase
     private let router: Router
     
-    @Published var movies: [MovieModel] = []
-    @Published var filteredMovies: [MovieModel] = []
-    @Published var categories: [CategoryModel] = []
+    @Published private(set) var movies: [MovieModel] = []
+    @Published private(set) var filteredMovies: [MovieModel] = []
+    @Published private(set) var categories: [CategoryModel] = []
     @Published var searchQuery: String = ""
     @Published var selectedId: Int = 0
     @Published var isNoData: Bool = false
@@ -27,7 +27,7 @@ final class MoviesViewModel: ObservableObject {
     
     init(
         useCase: MoviesUseCase,
-        router: some Router
+        router: Router
     ) {
         self.useCase = useCase
         self.router = router
@@ -71,7 +71,7 @@ final class MoviesViewModel: ObservableObject {
     
     func setupBindings() {
         $searchQuery
-            .combineLatest($filteredMovies)
+            .combineLatest($movies)
             .map { (searchQuery, movies) in
                 movies.filter {
                     searchQuery.isEmpty ? true :
@@ -102,4 +102,3 @@ final class MoviesViewModel: ObservableObject {
         // TODO: -
     }
 }
-
