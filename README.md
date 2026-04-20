@@ -5,7 +5,7 @@
 https://github.com/user-attachments/assets/a6ae19bb-1246-426b-8530-a3b3ccd0f63c
 
 ## High-level Design
-<img width="756" height="725" alt="Image" src="https://github.com/user-attachments/assets/a6ae19bb-1246-426b-8530-a3b3ccd0f63c" />
+<img width="817" height="873" alt="Image" src="https://github.com/user-attachments/assets/e12a4325-3c44-4e47-a50c-307e8ce09f28" />
 
 ## Requirements:
 ### Functional:
@@ -57,7 +57,7 @@ https://github.com/user-attachments/assets/a6ae19bb-1246-426b-8530-a3b3ccd0f63c
 
 - Dependencies:
   - [Kingfisher](https://github.com/onevcat/Kingfisher): Downloading and caching images from the web.
-  - [Networking](https://github.com/MhMudSalAh/Networking): Downloading and caching images from the web.
+  - [Networking](https://github.com/MhMudSalAh/Networking): Making API requests, handling responses, and managing errors in iOS apps.
 
 
 ### Author
